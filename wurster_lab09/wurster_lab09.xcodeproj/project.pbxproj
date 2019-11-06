@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8162951F23734CBB00189A13 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8162951D23734CBB00189A13 /* TimeStamp.swift */; };
+		8162952023734CBB00189A13 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8162951E23734CBB00189A13 /* Clock.swift */; };
 		8165CB88236C38D9000F31C6 /* setterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8165CB87236C38D9000F31C6 /* setterViewController.swift */; };
 		81812C6B236757B1004A8DB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81812C6A236757B1004A8DB3 /* AppDelegate.swift */; };
 		81812C6D236757B1004A8DB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81812C6C236757B1004A8DB3 /* SceneDelegate.swift */; };
 		81812C74236757B3004A8DB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81812C73236757B3004A8DB3 /* Assets.xcassets */; };
 		81812C77236757B3004A8DB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81812C75236757B3004A8DB3 /* LaunchScreen.storyboard */; };
-		81812C8223675821004A8DB3 /* Clock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81812C8123675821004A8DB3 /* Clock.swift */; };
-		81812C86236762D9004A8DB3 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81812C85236762D9004A8DB3 /* TimeStamp.swift */; };
 		81CC24FE237338200066E4F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CC24FD237338200066E4F0 /* ViewController.swift */; };
 		81CC250323733B470066E4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81CC250123733B470066E4F0 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8162951D23734CBB00189A13 /* TimeStamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
+		8162951E23734CBB00189A13 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Clock.swift; sourceTree = "<group>"; };
 		8165CB87236C38D9000F31C6 /* setterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setterViewController.swift; sourceTree = "<group>"; };
 		81812C67236757B1004A8DB3 /* wurster_lab09.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wurster_lab09.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81812C6A236757B1004A8DB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +28,6 @@
 		81812C73236757B3004A8DB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81812C76236757B3004A8DB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81812C78236757B3004A8DB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		81812C8123675821004A8DB3 /* Clock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Clock.swift; path = ../../wurster_lab03/wurster_lab03/Clock.swift; sourceTree = "<group>"; };
-		81812C85236762D9004A8DB3 /* TimeStamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimeStamp.swift; path = ../../wurster_lab06/wurster_lab06/TimeStamp.swift; sourceTree = "<group>"; };
 		81CC24FD237338200066E4F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		81CC250223733B470066E4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,8 +66,8 @@
 				81812C6A236757B1004A8DB3 /* AppDelegate.swift */,
 				81812C6C236757B1004A8DB3 /* SceneDelegate.swift */,
 				8165CB87236C38D9000F31C6 /* setterViewController.swift */,
-				81812C85236762D9004A8DB3 /* TimeStamp.swift */,
-				81812C8123675821004A8DB3 /* Clock.swift */,
+				8162951E23734CBB00189A13 /* Clock.swift */,
+				8162951D23734CBB00189A13 /* TimeStamp.swift */,
 				81812C73236757B3004A8DB3 /* Assets.xcassets */,
 				81CC250123733B470066E4F0 /* Main.storyboard */,
 				81812C75236757B3004A8DB3 /* LaunchScreen.storyboard */,
@@ -147,11 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8162952023734CBB00189A13 /* Clock.swift in Sources */,
 				81CC24FE237338200066E4F0 /* ViewController.swift in Sources */,
+				8162951F23734CBB00189A13 /* TimeStamp.swift in Sources */,
 				81812C6B236757B1004A8DB3 /* AppDelegate.swift in Sources */,
 				8165CB88236C38D9000F31C6 /* setterViewController.swift in Sources */,
-				81812C86236762D9004A8DB3 /* TimeStamp.swift in Sources */,
-				81812C8223675821004A8DB3 /* Clock.swift in Sources */,
 				81812C6D236757B1004A8DB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +303,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.ccp.cisapple.wurster-lab09";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ccp.cisapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,7 +321,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.ccp.cisapple.wurster-lab09";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ccp.cisapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
