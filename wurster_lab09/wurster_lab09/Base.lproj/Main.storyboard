@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="usn-kW-AzY">
+    <device id="ipad9_7" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="wurster_lab09" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qn3-TC-ggC">
+                                <rect key="frame" x="0.0" y="50" width="768" height="974"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Tc2-y1-SaE">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="458"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <state key="normal" title="top">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="topClockTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yb4-mo-DSC"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IXc-Fb-WAx">
+                                        <rect key="frame" x="0.0" y="458" width="768" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzw-MV-NCL">
+                                                <rect key="frame" x="0.0" y="0.0" width="384" height="58"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gax-rT-ddQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9VT-zj-OHR">
+                                                <rect key="frame" x="384" y="0.0" width="384" height="58"/>
+                                                <color key="backgroundColor" red="0.4339566386" green="0.99079211379999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                <state key="normal" title="Adjust">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="lf6-wC-aEa" kind="show" id="xDI-8S-qdt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="N8J-eD-gnS">
+                                        <rect key="frame" x="0.0" y="516" width="768" height="458"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <state key="normal" title="bottom">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bottomClockTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k0i-eA-GVv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tc2-y1-SaE" firstAttribute="height" secondItem="N8J-eD-gnS" secondAttribute="height" id="mK6-ls-Y1b"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qn3-TC-ggC" secondAttribute="bottom" id="0jf-Jn-Elj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qn3-TC-ggC" secondAttribute="trailing" id="ido-wK-bOF"/>
+                            <constraint firstItem="qn3-TC-ggC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ndS-eX-nad"/>
+                            <constraint firstItem="qn3-TC-ggC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qx8-fQ-WtS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qn3-TC-ggC" secondAttribute="bottom" id="vjz-eJ-r1C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YpB-93-qvV"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="N8J-eD-gnS" id="6Vw-zY-Sex"/>
+                        <outlet property="topLabel" destination="Tc2-y1-SaE" id="4Gn-Nc-SB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="603.125" y="28.710937499999996"/>
+        </scene>
+        <!--Setter View Controller-->
+        <scene sceneID="LCY-Ob-Ryf">
+            <objects>
+                <viewController id="lf6-wC-aEa" customClass="SetterViewController" customModule="wurster_lab09" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WNY-wE-aGr">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3iC-ty-7KX">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CQB-n7-9fr">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="483"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FWX-X3-7tb">
+                                        <rect key="frame" x="0.0" y="483" width="768" height="58"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                        <state key="normal" title="Apply Changes">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="xZJ-cQ-xSq" kind="unwind" unwindAction="unwindToStart:" id="2GQ-pB-I2h"/>
+                                        </connections>
+                                    </button>
+                                    <pickerView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KIY-bD-n8u">
+                                        <rect key="frame" x="0.0" y="541" width="768" height="483"/>
+                                    </pickerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="KIY-bD-n8u" firstAttribute="height" secondItem="CQB-n7-9fr" secondAttribute="height" id="7dQ-ol-LM6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GZH-nS-UXz" firstAttribute="trailing" secondItem="3iC-ty-7KX" secondAttribute="trailing" id="5kf-1c-dBG"/>
+                            <constraint firstItem="GZH-nS-UXz" firstAttribute="bottom" secondItem="3iC-ty-7KX" secondAttribute="bottom" id="Gyw-Fn-Zbe"/>
+                            <constraint firstItem="3iC-ty-7KX" firstAttribute="top" secondItem="WNY-wE-aGr" secondAttribute="top" id="kH7-NC-OL9"/>
+                            <constraint firstItem="3iC-ty-7KX" firstAttribute="leading" secondItem="GZH-nS-UXz" secondAttribute="leading" id="zgN-di-52A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GZH-nS-UXz"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cwQ-C5-R4h"/>
+                    <connections>
+                        <outlet property="bottomPicker" destination="KIY-bD-n8u" id="Bcv-vE-2Hu"/>
+                        <outlet property="topPicker" destination="CQB-n7-9fr" id="H06-Us-HFW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viZ-cP-MWC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="xZJ-cQ-xSq" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1324" y="29"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cng-2K-3Lc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="usn-kW-AzY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mjJ-xy-qQ6">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hQW-wv-XK2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MG6-L2-Xpi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.5" y="28.710937499999996"/>
+        </scene>
+    </scenes>
+</document>
