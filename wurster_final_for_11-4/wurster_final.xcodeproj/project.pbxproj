@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		81145BCB2385BD7400AD5341 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145BCA2385BD7400AD5341 /* SceneDelegate.swift */; };
-		81145BCD2385BD7800AD5341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145BCC2385BD7800AD5341 /* AppDelegate.swift */; };
+		81145BC92385B87500AD5341 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81145BC82385B87500AD5341 /* AppDelegate.swift */; };
 		81834E10238314A40072C4C4 /* gameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81834E0F238314A40072C4C4 /* gameData.swift */; };
 		81FE3AC32382C15C00576EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FE3AC22382C15C00576EED /* ViewController.swift */; };
 		81FE3AC62382C15C00576EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81FE3AC42382C15C00576EED /* Main.storyboard */; };
@@ -19,8 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		81145BCA2385BD7400AD5341 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		81145BCC2385BD7800AD5341 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81145BC82385B87500AD5341 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../../AppDelegate.swift; sourceTree = "<group>"; };
 		81834E0F238314A40072C4C4 /* gameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameData.swift; sourceTree = "<group>"; };
 		81FE3ABB2382C15C00576EED /* wurster_final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wurster_final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FE3AC22382C15C00576EED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,9 +60,8 @@
 		81FE3ABD2382C15C00576EED /* wurster_final */ = {
 			isa = PBXGroup;
 			children = (
-				81145BCA2385BD7400AD5341 /* SceneDelegate.swift */,
-				81145BCC2385BD7800AD5341 /* AppDelegate.swift */,
 				81FE3AC22382C15C00576EED /* ViewController.swift */,
+				81145BC82385B87500AD5341 /* AppDelegate.swift */,
 				81FE3AC42382C15C00576EED /* Main.storyboard */,
 				81FE3AD22382C21A00576EED /* ViewControllerL2.swift */,
 				81834E0F238314A40072C4C4 /* gameData.swift */,
@@ -147,11 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81145BCD2385BD7800AD5341 /* AppDelegate.swift in Sources */,
-				81145BCB2385BD7400AD5341 /* SceneDelegate.swift in Sources */,
 				81FE3AC32382C15C00576EED /* ViewController.swift in Sources */,
 				81FE3AD32382C21A00576EED /* ViewControllerL2.swift in Sources */,
 				81834E10238314A40072C4C4 /* gameData.swift in Sources */,
+				81145BC92385B87500AD5341 /* AppDelegate.swift in Sources */,
 				81FE3AD52382C23100576EED /* ViewControllerL3.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,7 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TAJW75LU76;
 				INFOPLIST_FILE = wurster_final/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TAJW75LU76;
 				INFOPLIST_FILE = wurster_final/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
